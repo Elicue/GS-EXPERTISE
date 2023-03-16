@@ -202,6 +202,7 @@ main .secondsection {
   height: 100vh;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
 }
 main .secondsection .img {
   display: flex;
@@ -224,6 +225,8 @@ main .secondsection .txt {
   flex-direction: column;
   width: 55%;
   height: 60%;
+  justify-content: start;
+  align-items: start;
 }
 main .secondsection .txt .title {
   display: flex;
@@ -244,6 +247,7 @@ main .secondsection .txt .content {
   flex-direction: column;
   width: 85%;
   margin: auto;
+  margin-top: -2vh;
 }
 main .secondsection .txt .content p {
   font-family: "Dunbar Regular", sans-serif;
@@ -253,11 +257,9 @@ main .secondsection .txt .content p {
 main .secondsection .txt .cta {
   display: flex;
   flex-direction: column;
-  width: 85%;
-  margin: auto;
+  margin-left: 4vw;
 }
 main .secondsection .txt .cta button {
-  width: 30%;
   border: 1.5px solid var(--white);
   padding: 0.7vw 2vw;
   border-radius: 50px;
@@ -283,7 +285,7 @@ main .thirdsection {
 main .thirdsection .txt {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   margin: auto;
   text-align: center;
 }
@@ -292,6 +294,8 @@ main .thirdsection .txt .title {
   flex-direction: column;
 }
 main .thirdsection .txt .title h2 {
+  width: 80%;
+  margin: auto;
   color: var(--black);
   font-family: "lust-sans", sans-serif;
   font-size: 2.7em;
@@ -300,7 +304,7 @@ main .thirdsection .txt .title h2 span {
   color: var(--coral);
 }
 main .thirdsection .txt .txt {
-  width: 96%;
+  width: 90%;
   display: flex;
   color: var(--black);
   font-family: "Dunbar Regular", sans-serif;
@@ -346,6 +350,10 @@ main .thirdsection .cards .card .content p {
   visibility: hidden;
 }
 main .thirdsection .cards .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 11vh;
   left: 5vh;
@@ -368,7 +376,7 @@ main .thirdsection .devis {
   width: 90%;
   height: 38vh;
   margin: auto;
-  margin-top: 25vh;
+  margin-top: 30vh;
   background: var(--coral-pink);
   border: 2px solid var(--coral);
   position: relative;
@@ -383,7 +391,6 @@ main .thirdsection .devis h3 {
   margin-bottom: -5vh;
 }
 main .thirdsection .devis button {
-  width: 15%;
   margin: auto;
   color: var(--black);
   border: 1.5px solid var(--black);
@@ -486,7 +493,7 @@ main footer .top .right input::placeholder {
   font-size: 1.1em;
 }
 main footer .top .right button {
-  width: 35%;
+  margin-right: auto;
   border: 1.5px solid var(--white);
   padding: 0.7vw 2vw;
   border-radius: 50px;
@@ -518,4 +525,55 @@ main footer .asset {
   right: 0;
   z-index: 1;
   bottom: -5vh;
+}
+
+@media screen and (max-width: 767.98px) {
+  header {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    background: var(--black);
+    position: fixed;
+    top: 0;
+    color: var(--white);
+    padding: 0 4%;
+    border-bottom: 1.5px solid var(--coral);
+    justify-content: space-between;
+    z-index: 99;
+  }
+  header .logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    width: 57%;
+    font-family: "Dunbar Regular", sans-serif;
+  }
+  header nav p:hover {
+    color: var(--coral);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+  }
+  header nav p:last-child {
+    border: 1.5px solid var(--white);
+    padding: 0.7vw 2vw;
+    border-radius: 50px;
+  }
+  header nav p:last-child:hover {
+    background: var(--coral);
+    border: 1.5px solid var(--coral);
+    color: var(--white);
+    transition: ease-in-out 0.3s;
+  }
 }/*# sourceMappingURL=style.css.map */
