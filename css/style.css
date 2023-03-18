@@ -410,7 +410,8 @@ main .thirdsection .devis img {
   bottom: 0;
   left: 0;
 }
-main footer {
+
+footer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -421,42 +422,42 @@ main footer {
   justify-content: space-between;
   position: relative;
 }
-main footer .top {
+footer .top {
   display: flex;
   flex-direction: row;
   height: 90%;
   z-index: 2;
 }
-main footer .top .left {
+footer .top .left {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 40%;
   padding-left: 10vh;
 }
-main footer .top .left .logo {
+footer .top .left .logo {
   display: flex;
   height: 45%;
 }
-main footer .top .left .infos {
+footer .top .left .infos {
   display: flex;
   flex-direction: column;
   height: 55%;
   justify-content: space-around;
   padding: 2vh 0;
 }
-main footer .top .left .infos div {
+footer .top .left .infos div {
   display: flex;
   flex-direction: row;
   font-family: "Filson Pro", sans-serif;
   align-items: center;
 }
-main footer .top .left .infos div p {
+footer .top .left .infos div p {
   font-size: 1.1em;
   width: 50%;
   margin-left: 2vh;
 }
-main footer .top .right {
+footer .top .right {
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -464,35 +465,35 @@ main footer .top .right {
   justify-content: space-between;
   padding-left: 20vh;
 }
-main footer .top .right h3 {
+footer .top .right h3 {
   font-family: "lust-sans", sans-serif;
   color: var(--white);
   font-size: 2.7em;
 }
-main footer .top .right p {
+footer .top .right p {
   font-family: "apfelGrotezk", sans-serif;
   margin-top: -5vh;
   font-size: 1em;
   width: 100%;
 }
-main footer .top .right input {
+footer .top .right input {
   background: var(--light-pink);
   border: 1.5px solid var(--coral);
   font-size: 1.1em;
   padding: 2vh 3vh;
 }
-main footer .top .right input:focus {
+footer .top .right input:focus {
   outline: none;
 }
-main footer .top .right input::-moz-placeholder {
+footer .top .right input::-moz-placeholder {
   color: var(--black);
   font-size: 1.1em;
 }
-main footer .top .right input::placeholder {
+footer .top .right input::placeholder {
   color: var(--black);
   font-size: 1.1em;
 }
-main footer .top .right button {
+footer .top .right button {
   margin-right: auto;
   border: 1.5px solid var(--white);
   padding: 0.7vw 2vw;
@@ -501,13 +502,13 @@ main footer .top .right button {
   color: var(--white);
   font-size: 1.2em;
 }
-main footer .top .right button:hover {
+footer .top .right button:hover {
   background: var(--coral);
   border: 1.5px solid var(--coral);
   color: var(--white);
   transition: ease-in-out 0.3s;
 }
-main footer .bottom {
+footer .bottom {
   height: 10%;
   display: flex;
   flex-direction: row;
@@ -515,12 +516,12 @@ main footer .bottom {
   justify-content: center;
   margin-top: 5vh;
 }
-main footer .bottom p {
+footer .bottom p {
   font-family: "Filson Pro", sans-serif;
   margin-left: 2vh;
   font-size: 1.1em;
 }
-main footer .asset {
+footer .asset {
   position: absolute;
   right: 0;
   z-index: 1;
@@ -530,7 +531,7 @@ main footer .asset {
 @media screen and (max-width: 767.98px) {
   header {
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     background: var(--black);
@@ -552,28 +553,463 @@ main footer .asset {
     width: 100%;
   }
   header nav {
+    display: none;
+  }
+  main {
+    margin-top: 10vh;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    color: var(--white);
+  }
+  main .firstSection {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    width: 100%;
+    color: var(--white);
     justify-content: space-between;
-    font-size: 1.2rem;
-    width: 57%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5vh;
+  }
+  main .firstSection .text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main .firstSection .text .titre {
+    width: 100%;
+    display: flex;
+  }
+  main .firstSection .text .titre h1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    font-family: "lust-sans", sans-serif;
+    font-weight: bold;
+  }
+  main .firstSection .text .titre h1 span {
+    color: var(--coral);
+  }
+  main .firstSection .text .txt {
+    width: 90%;
+    display: flex;
+    margin-top: 5vh;
+  }
+  main .firstSection .text .txt p {
+    font-family: "Dunbar Regular", sans-serif;
+    font-size: 1em;
+    line-height: 24px;
+  }
+  main .firstSection .text .cta {
+    display: flex;
+    width: 100%;
+  }
+  main .firstSection .text .cta button {
+    font-size: 1rem;
+    margin-top: 5vh;
+    font-family: "Dunbar Regular", sans-serif;
+    border: 1.5px solid var(--white);
+    padding: 3% 10%;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--white);
     font-family: "Dunbar Regular", sans-serif;
   }
-  header nav p:hover {
-    color: var(--coral);
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
-  }
-  header nav p:last-child {
-    border: 1.5px solid var(--white);
-    padding: 0.7vw 2vw;
-    border-radius: 50px;
-  }
-  header nav p:last-child:hover {
+  main .firstSection .text .cta button:hover {
     background: var(--coral);
     border: 1.5px solid var(--coral);
     color: var(--white);
     transition: ease-in-out 0.3s;
+  }
+  main .firstSection .img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-left: -3vh;
+  }
+  main .firstSection .img img {
+    width: 90%;
+    filter: grayscale(100%);
+  }
+  main .firstSection .img img:hover {
+    filter: grayscale(0%);
+    transition: ease-in-out 0.3s;
+  }
+  main .horizontalScrolling {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 7.7vh;
+    font-size: 20px;
+    justify-content: flex-start;
+    border-bottom: 1.5px solid var(--black);
+    border-right: 1.5px solid var(--black);
+  }
+  main .horizontalScrolling span {
+    font-size: 2.3em;
+    -webkit-text-stroke: 1.5px var(--white);
+    color: var(--black);
+    font-family: "lust-sans", sans-serif;
+    font-weight: bold;
+  }
+  main .horizontalScrolling .content {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    border-bottom: var(--white) 1.5px solid;
+    border-top: var(--white) 1.5px solid;
+    padding: 2vh 0;
+  }
+  main .horizontalScrolling .content .txt {
+    white-space: nowrap;
+    font-size: 1.2em;
+    animation: scrollTxt 20s linear infinite;
+  }
+  main .secondsection {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+  }
+  main .secondsection .img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  main .secondsection .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: grayscale(100%);
+  }
+  main .secondsection .txt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: start;
+    margin-top: 2vh;
+  }
+  main .secondsection .txt .title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 0% 6%;
+  }
+  main .secondsection .txt .title h2 {
+    font-family: "lust-sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.7em;
+  }
+  main .secondsection .txt .title h2:nth-child(1) {
+    color: var(--coral);
+  }
+  main .secondsection .txt .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 0% 6%;
+  }
+  main .secondsection .txt .content p {
+    font-family: "Dunbar Regular", sans-serif;
+    font-size: 1.1em;
+    line-height: 24px;
+  }
+  main .secondsection .txt .cta {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+  }
+  main .secondsection .txt .cta button {
+    border: 1.5px solid var(--white);
+    padding: 5% 10%;
+    border-radius: 50px;
+    color: var(--white);
+    background: transparent;
+    font-size: 1em;
+  }
+  main .thirdsection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--light-pink);
+    border-top: 1.5px solid var(--coral);
+    padding: 2vh 0 5vh 0;
+  }
+  main .thirdsection .txt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    text-align: start;
+  }
+  main .thirdsection .txt .title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0% 6%;
+  }
+  main .thirdsection .txt .title h2 {
+    width: 100%;
+    margin: auto;
+    color: var(--black);
+    font-family: "lust-sans", sans-serif;
+    font-size: 1.7em;
+  }
+  main .thirdsection .txt .title h2 span {
+    color: var(--coral);
+  }
+  main .thirdsection .txt .txt {
+    width: 100%;
+    display: flex;
+    color: var(--black);
+    font-family: "Dunbar Regular", sans-serif;
+    font-size: 1.1em;
+    line-height: 24px;
+    margin-top: 3vh;
+    padding: 0% 6%;
+  }
+  main .thirdsection .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    justify-content: center;
+    padding: 0% 6%;
+    align-items: center;
+  }
+  main .thirdsection .cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    height: 35vh;
+    background: var(--black);
+    border: 1.5px solid var(--black);
+    color: var(--white);
+    font-family: "Dunbar Regular", sans-serif;
+    padding: 4vh 3vh;
+    position: relative;
+    margin-top: 5vh;
+  }
+  main .thirdsection .cards .card .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+  main .thirdsection .cards .card .content h3 {
+    text-transform: uppercase;
+    font-size: 31px;
+    font-weight: normal;
+    color: var(--coral);
+  }
+  main .thirdsection .cards .card .content p {
+    margin-top: 1.3vh;
+    line-height: 24px;
+    font-size: 1.1em;
+    visibility: visible;
+  }
+  main .thirdsection .cards .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  main .thirdsection .cards .card:hover .cardTitle {
+    color: var(--coral);
+    transition: ease-in-out 0.3s;
+  }
+  main .thirdsection .cards .card:hover .cardDesc {
+    visibility: visible;
+    transition: ease-in-out 0.3s;
+  }
+  main .thirdsection .cards .card:hover .cardImg {
+    transform: translate(2vh, 15vh);
+    transition: ease-in-out 0.3s;
+  }
+  main .thirdsection .devis {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 28vh;
+    margin: auto;
+    margin-top: 10vh;
+    background: var(--coral-pink);
+    border: 2px solid var(--coral);
+    position: relative;
+  }
+  main .thirdsection .devis h3 {
+    color: var(--black);
+    font-family: "lust-sans", sans-serif;
+    font-size: 1.7em;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0;
+    z-index: 5;
+  }
+  main .thirdsection .devis button {
+    margin: auto;
+    color: var(--black);
+    border: 1.5px solid var(--black);
+    padding: 2% 7%;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 1.2em;
+    z-index: 5;
+  }
+  main .thirdsection .devis img {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 75vh;
+    background: var(--black);
+    font-family: "Dunbar Regular", sans-serif;
+    justify-content: space-between;
+    position: relative;
+    padding: 10% 6% 0% 6%;
+  }
+  footer .top {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+  }
+  footer .top .left {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding-left: 0vh;
+    align-items: center;
+  }
+  footer .top .left .logo {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+  }
+  footer .top .left .logo img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer .top .left .infos {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 2vh;
+  }
+  footer .top .left .infos div {
+    display: flex;
+    flex-direction: row;
+    font-family: "Filson Pro", sans-serif;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
+  footer .top .left .infos div p {
+    font-size: 1em;
+    width: 100%;
+    margin-left: 2vh;
+  }
+  footer .top .right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 0vh;
+  }
+  footer .top .right h3 {
+    font-family: "lust-sans", sans-serif;
+    color: var(--white);
+    font-size: 2em;
+  }
+  footer .top .right p {
+    font-family: "apfelGrotezk", sans-serif;
+    margin: 2vh 0;
+    font-size: 1em;
+    width: 100%;
+  }
+  footer .top .right input {
+    background: var(--light-pink);
+    border: 1.5px solid var(--coral);
+    font-size: 1em;
+    padding: 1vh 2vh;
+  }
+  footer .top .right input:focus {
+    outline: none;
+  }
+  footer .top .right input::-moz-placeholder {
+    color: var(--black);
+    font-size: 1em;
+  }
+  footer .top .right input::placeholder {
+    color: var(--black);
+    font-size: 1em;
+  }
+  footer .top .right button {
+    margin-right: auto;
+    border: 1.5px solid var(--white);
+    padding: 2% 10%;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--white);
+    font-size: 1.1em;
+    margin-top: 2vh;
+  }
+  footer .bottom {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+  }
+  footer .bottom p {
+    font-family: "Filson Pro", sans-serif;
+    margin-left: 2vh;
+    font-size: 1em;
+  }
+  footer .asset {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    bottom: 8vh;
   }
 }/*# sourceMappingURL=style.css.map */
