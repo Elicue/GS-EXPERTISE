@@ -2505,7 +2505,7 @@ body {
   footer .top .right {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
     padding-left: 0vh;
     margin-top: 5vh;
