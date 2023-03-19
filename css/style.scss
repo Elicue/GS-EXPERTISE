@@ -62,7 +62,7 @@ body {
       align-items: center;
       justify-content: space-between;
       // font-size: 1.1rem;
-      font-size: 1.7rem;
+      font-size: 2rem;
       width: 57%;
       font-family: 'Dunbar Regular', sans-serif;
 
@@ -378,7 +378,7 @@ body {
           display: flex;
           flex-direction: column;
           width: 30%;
-          height: 30vh;
+          min-height: 35vh;
           background: var(--white);
           border: 1.5px solid var(--black);
           color: var(--black);
@@ -427,7 +427,7 @@ body {
         }
 
         .card:hover .cardImg {
-          transform: translate(2vh, 15vh);
+          transform: translate(1vh, 17vh);
           transition: ease-in-out 0.3s;
         }
       }
@@ -438,7 +438,7 @@ body {
         width: 90%;
         height: 40vh;
         margin: auto;
-        margin-top: 30vh;
+        margin-top: 35vh;
         background: var(--coral-pink);
         border: 5px solid var(--coral);
         position: relative;
