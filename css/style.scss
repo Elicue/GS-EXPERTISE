@@ -28,7 +28,7 @@ body {
   background: var(--black);
 }
 
-@media (min-width: 2000px) and (orientation: landscape){
+@media (min-width: 2000px) {
   
   header {
     width: 100%;
@@ -628,7 +628,7 @@ body {
 
 }
 
-@media (min-width: 1500px) and (orientation: landscape){
+@media (min-width: 1500px){
 
   header {
     width: 100%;
@@ -1206,7 +1206,7 @@ body {
   }
 }
 
-@media (min-width: 1070px) and (max-width: 1500px) and (orientation: landscape) {
+@media (min-width: 1070px) and (max-width: 1500px) {
 
   header {
     width: 100%;
@@ -1793,7 +1793,7 @@ body {
   }
 }
 
-@media (min-width: 835px) and (max-width : 1070px)and (orientation: landscape) {
+@media (min-width: 835px) and (max-width : 1070px){
 
   header {
     width: 100%;
@@ -2523,14 +2523,6 @@ body {
         bottom: 0;
         left: 0;
       }
-
-      .trigger:checked + span {
-        transform: rotate(45deg);
-        &:after {
-          transform:  rotate(-90deg) translate(6px,0);
-          background: #000;
-        }
-      }
     }
   }
 
@@ -3204,14 +3196,6 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-      }
-
-      .trigger:checked + span {
-        transform: rotate(45deg);
-        &:after {
-          transform:  rotate(-90deg) translate(6px,0);
-          background: #000;
-        }
       }
     }
   }
