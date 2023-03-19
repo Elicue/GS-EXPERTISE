@@ -2167,7 +2167,7 @@ body {
   }
   header .navbar .navbar__menu a:last-child {
     border: 1.5px solid var(--white);
-    padding: 3% 10%;
+    padding: 2% 6%;
     border-radius: 50px;
   }
   header .navbar .navbar__menu a:last-child:hover {
