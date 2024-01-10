@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  line-height: 200%;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 8.75rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+nav div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+nav div:nth-child(1) .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav div:nth-child(1) .logo img {
+  width: 40px;
+  height: 40px;
+}
+nav div:nth-child(1) .logo p {
+  font-weight: 600;
+}
+nav div:nth-child(1) .menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+nav div:nth-child(1) .menu .active {
+  color: #2F4DDB;
+}
+nav div:nth-child(1) .menu a {
+  text-decoration: none;
+  color: #1E1E1E;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+nav div:nth-child(1) .menu a:hover {
+  color: #2F4DDB;
+}
+nav div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+nav div:nth-child(2) .search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: #1E1E1E;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: 1px solid #1E1E1E;
+  min-width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+nav div:nth-child(2) .search input {
+  border: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #1E1E1E;
+  width: 100%;
+}
+nav div:nth-child(2) .search input ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+nav div:nth-child(2) .search input ::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+nav div:nth-child(2) .search input:active, nav div:nth-child(2) .search input:focus {
+  outline: none;
+}
+nav div:nth-child(2) .d-l {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: #1E1E1E;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: 1px solid #1E1E1E;
+  min-width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
+  margin: 20vh 0;
+}
+main header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 8.75rem;
+}
+main header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1E1E1E;
+}
+main header p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #1E1E1E;
+  width: 50%;
+}
+main header .cats {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+main header .cats .cat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.3rem;
+  background-color: #f1f9fc;
+  color: #1E1E1E;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: none;
+  min-width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+main header .cats .cat p {
+  width: 100%;
+}
+main .most_recent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  padding: 0 8.75rem;
+}
+main .most_recent .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+main .most_recent .title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+main .most_recent .title p {
+  color: #2F4DDB;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .most_recent .posts {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+main .most_recent .posts .post {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #1E1E1E;
+}
+main .most_recent .posts .post img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.4rem;
+}
+main .most_recent .posts .post .infos {
+  display: flex;
+  flex-direction: column;
+}
+main .most_recent .posts .post .infos p {
+  font-size: 0.8rem;
+}
+main .most_recent .posts .post .infos h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main .most_recent .posts .post .infos div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .most_recent .posts .post .infos div p:nth-child(1) {
+  color: #2F4DDB;
+}
+main .most_recent .posts .others {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+main .filters {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  background-color: #f1f9fc;
+  padding: 1.2rem 8.75rem;
+  position: fixed;
+  top: 8.5vh;
+}
+main .filters .active {
+  color: #2F4DDB;
+}
+main .filters .filter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: transparent;
+  border: none;
+}
+main .all {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8.75rem;
+  width: 100%;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15vh;
+}
+main .all .posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 2rem;
+}
+main .all .posts .post {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #1E1E1E;
+}
+main .all .posts .post img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.4rem;
+}
+main .all .posts .post .infos {
+  display: flex;
+  flex-direction: column;
+}
+main .all .posts .post .infos p {
+  font-size: 0.8rem;
+}
+main .all .posts .post .infos h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main .all .posts .post .infos div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .all .posts .post .infos div p:nth-child(1) {
+  color: #2F4DDB;
+}
+main .all button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: #2F4DDB;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh auto 0;
+}
+main .article {
+  display: flex;
+  padding: 0 8.75rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .article .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+main .article .title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main .article .title div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+main .article .title div p:nth-child(1) {
+  color: #2F4DDB;
+}
+main .article .content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 2rem;
+}
+main .article .content p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #1E1E1E;
+}
+main .article .content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.4rem;
+}
+main .article .srcs {
+  display: flex;
+  flex-direction: column;
+}
+main .article .srcs p {
+  font-size: 0.8rem;
+}
+main .article .srcs p span {
+  font-weight: 700;
+}
+main .article .srcs p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #f1f9fc;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 0;
+}
+footer h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1E1E1E;
+}
+footer p {
+  width: 50%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.3rem;
+  background-color: #2F4DDB;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  min-width: 20%;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
